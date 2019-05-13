@@ -1,0 +1,22 @@
+<div class="col-md-6">
+    <h2 class="text-center">Withdraw</h2>
+  <form>
+   
+    <div class="form-group">
+        <label for="senderId">Your Account Id:</label>
+        <input type="number" [(ngModel)]="user.senderId" placeholder="Sender Id" name="senderId" class="form-control" id="senderId">
+    </div>
+   
+    <div class="form-group">
+        <label for="lastName">Receiver Id:</label>
+        <input type="number" [(ngModel)]="user.receiverId" placeholder="Receiver Id" name="receiverId" class="form-control" id="receiverId">
+      </div>
+    
+    <div class="form-group">
+      <label for="withdraw">Withdraw Amount:</label>
+      <input type="number" [(ngModel)]="user.withdraw" placeholder="Amount" name="withdraw" class="form-control" id="withdraw">
+    </div>
+  
+    <button class="btn btn-success" (click)="withdraw()">Send</button>
+  </form>
+  </div>
